@@ -15,10 +15,45 @@
 
 <body>
     <header>
+        <section id="sumario">
+            <h2>Índice de tags html</h2>
+            <fieldset id="inputs">
+                <legend>Tipos de inputs</legend>
+                <ul>
+                    <li><a href="#">button</a></li>
+                    <li><a href="#">checkbox</a></li>
+                    <li><a href="#">color</a></li>
+                    <li><a href="#dtnasc">date</a></li>
+                    <li><a href="#">datetime-local</a></li>
+                    <li><a href="#">email</a></li>
+                    <li><a href="#">file</a></li>
+                    <li><a href="#">hidden</a></li>
+                    <li><a href="#">image</a></li>
+                    <li><a href="#">month</a></li>
+                    <li><a href="#idade">number</a></li>
+                    <li><a href="#senha">password</a></li>
+                    <li><a href="#">radio</a></li>
+                    <li><a href="#">range</a></li>
+                    <li><a href="#">reset</a></li>
+                    <li><a href="#btnEnviar">search</a></li>
+                    <li><a href="#">submit</a></li>
+                    <li><a href="#">tel</a></li>
+                    <li><a href="#nome">text</a></li>
+                    <li><a href="#">time</a></li>
+                    <li><a href="#">url</a></li>
+                    <li><a href="#">week</a></li>
+                </ul>
+            </fieldset>
+        </section>
         <h1>Exemplo de uso de um formulário</h1>
         <section id="cadastro">
             <h2>Início do formulário</h2>
             <form action="#">
+                <!-- Button-->
+                <div>
+                    <label for="btnOla">Exemplo de button</label>
+<input type="button" value="CLique-me" id="btnOla">
+                </div>
                 <!--Nome da pessoa-->
                 <div>
                     <label for="nome">Nome:</label>
@@ -28,7 +63,7 @@
                 <div>
 
                     <label for="endereço">Endereço:</label>
-                    <input type="text" name="endereço" id="endereço" required>
+                    <input type="text" name="endereço" id="endereço" size="50" required>
                 </div>
                 <!--Data de nascimento-->
                 <div>
@@ -43,9 +78,9 @@
                 <!-- Idade-->
                 <div>
                     <label for="number">Idade:</label>
-<input type="number" name="idade" id="idade">
+                    <input type="number" name="idade" id="idade">
                 </div>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" id="btnEnviar">
 
             </form>
         </section>
