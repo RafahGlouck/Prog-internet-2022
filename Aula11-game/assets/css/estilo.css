@@ -1,0 +1,28 @@
+.board {
+    position: relative;
+    width: 600px;
+    border: 1px solid black;
+    margin: 0 auto;
+    height: 500px;
+    overflow: hidden;
+}
+#pipe {
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: pipe-anime 2s infinite linear;
+}
+#mario {
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+}
+@keyframes pipe-anime {
+from {
+right: -80px;
+}   
+to {
+right: 100%;
+} 
+}
